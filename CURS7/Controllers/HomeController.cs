@@ -13,8 +13,10 @@ namespace CURS7.Controllers
         {
             return View();
         }
+        [ActionName("about")]
         public ActionResult SomeMethodName()
         {
+
             return View();
         }
     }
