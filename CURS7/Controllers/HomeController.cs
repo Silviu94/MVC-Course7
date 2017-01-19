@@ -35,5 +35,11 @@ namespace CURS7.Controllers
         {
             return Content("Hello");
         }
+        //[Authorize]
+        [Authorize(Roles = "Admin")]
+        public ActionResult ThisMethodNeedsAuthorization()
+        {
+            return Content("Hello");
+        }
     }
 }
