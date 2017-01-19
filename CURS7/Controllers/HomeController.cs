@@ -19,5 +19,16 @@ namespace CURS7.Controllers
 
             return View();
         }
+        //[NonAction]
+        public double Calc()
+        {
+            var list = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            int sum = 0;
+            foreach (int x in list)
+                sum += x;
+            return sum;
+
+
+        }
     }
 }
