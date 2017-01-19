@@ -30,5 +30,10 @@ namespace CURS7.Controllers
 
 
         }
+        [HttpGet]
+        public ActionResult VerbsTest()
+        {
+            return Content("Hello");
+        }
     }
 }
